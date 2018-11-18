@@ -1,7 +1,7 @@
 {
-  "name": "npm-mod-start",
+  "name": "node-ig",
   "version": "1.0.0",
-  "description": "An npm module starter kit",
+  "description": "An npm module for working with the Instagram API",
   "main": "index.js",
   "scripts": {
     "cover": "nyc --reporter=html --reporter=text mocha test/**/*.spec.js",
