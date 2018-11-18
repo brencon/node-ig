@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/brencon/npm-mod-start.svg?branch=master)](https://travis-ci.org/brencon/npm-mod-start) [![Coverage Status](https://coveralls.io/repos/github/brencon/npm-mod-start/badge.svg?branch=master)](https://coveralls.io/github/brencon/npm-mod-start?branch=master)
+[![Build Status](https://travis-ci.org/brencon/node-ig.svg?branch=master)](https://travis-ci.org/brencon/node-ig) [![Coverage Status](https://coveralls.io/repos/github/brencon/node-ig/badge.svg?branch=master)](https://coveralls.io/github/brencon/node-ig?branch=master)
 
-[![NPM](https://nodei.co/npm/npm-mod-start.png)](https://nodei.co/npm/npm-mod-start/)
+[![NPM](https://nodei.co/npm/node-ig.png)](https://nodei.co/npm/node-ig/)
 
-# npm-mod-start
-An npm module starter kit
+# node-ig
+An npm module for working with the Instagram API.
 
 ## Overview
 TBD
@@ -11,7 +11,7 @@ TBD
 ## Installation
 
 ### npm
-`npm install npm-mod-start -S`
+`npm install node-ig -S`
 
 ## Tests
 `npm test`
