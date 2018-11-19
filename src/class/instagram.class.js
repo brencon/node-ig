@@ -2,9 +2,9 @@ const _config = {};
 _config.clientId = '12b4f75ca1864d599d3271d55a7f8cf5';
 _config.clientSecret = '8cd1b749eab749edae8ed953c8e3898d';
 _config.accessToken = '';
-let _apiVersion = 'v1';
-let _baseURL = 'https://api.instagram.com';
-let _apiURL = `${_baseURL}/${_apiVersion}/`;
+const _apiVersion = 'v1';
+const _baseURL = 'https://api.instagram.com';
+const _apiURL = `${_baseURL}/${_apiVersion}/`;
 
 module.exports = class Instagram {
   static getByHashtag() {

@@ -19,7 +19,7 @@ TBD
 ## Code Quality
 Code quality will be checked using eslint with the `--fix` argument so repair easily-fixed rule-breaking code.
 
-`npm lint`
+`npm run lint`
 
 ## Code Coverage
 Code coverage is maintained by using the nyc command-line-client for [Istanbul](https://istanbul.js.org/) with [Coveralls](https://coveralls.io) reporting.
