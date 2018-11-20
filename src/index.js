@@ -6,7 +6,8 @@ module.exports.searchByHashtag = function(hashtag) {
   const apiURL = `${config.instagram.baseURI}/${config.instagram.apiVersion}`;
   const options = {
     method: 'GET',
-    uri: `${apiURL}/tags/${hashtag}/media/recent?access_token=${config.instagram.accessToken}`
+    uri: `${apiURL}/tags/${hashtag}/media/recent?access_token=${config.instagram.accessToken}`,
+    rejectUnauthorized: config.rejectUnauthorized
   };
   return rp(options).then(function(res) {
     return JSON.parse(res);
