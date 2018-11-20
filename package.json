@@ -7,7 +7,7 @@
     "cover": "nyc --reporter=html --reporter=text mocha test/**/*.spec.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "./node_modules/.bin/eslint src --fix",
-    "test": "mocha --reporter spec test/**/*.spec.js",
+    "test": "SET \"NODE_ENV=production\" && mocha --reporter spec test/**/*.spec.js",
     "preversion": "npm run lint && npm test && npm run cover",
     "prepublishOnly": "npm version patch && git push --tags && git push"
   },
