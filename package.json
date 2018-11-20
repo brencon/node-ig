@@ -1,6 +1,6 @@
 {
   "name": "node-ig",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "An npm module for working with the Instagram API",
   "main": "index.js",
   "scripts": {
