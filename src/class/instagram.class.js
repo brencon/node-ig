@@ -10,7 +10,8 @@ module.exports = class Instagram {
   static getByHashtag() {
     const token = '9129631078.12b4f75.d398874c555445c9b49b8babdc354b76';
     const hashtag = 'sympsctest';
-    const url = `${_apiURL}tags/${hashtag}/media/recent`;
+    //const url = `${_apiURL}tags/${hashtag}/media/recent`;
+    const url = `${_apiURL}/users/self/media/recent`;
     return true;
   }
 };
