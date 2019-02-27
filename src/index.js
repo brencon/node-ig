@@ -1,6 +1,6 @@
 'use strict';
 const _ = require('lodash');
-const config = require('config');
+const config = require('../config/default');
 const rp = require('request-promise');
 
 module.exports.searchByHashtag = function(hashtag) {
