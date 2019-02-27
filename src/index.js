@@ -3,11 +3,11 @@ const _ = require('lodash');
 const config = require('../config/default');
 const rp = require('request-promise');
 
-module.exports.searchByHashtag = function(hashtag) {
+module.exports.searchByHashtag = function(token, hashtag) {
   const apiURL = `${config.instagram.baseURI}/${config.instagram.apiVersion}`;
   const options = {
     method: 'GET',
-    uri: `${apiURL}/users/self/media/recent?access_token=${config.instagram.accessToken}`,
+    uri: `${apiURL}/users/self/media/recent?access_token=${token}`,
     rejectUnauthorized: config.rejectUnauthorized
   };
   return rp(options).then(function(res) {

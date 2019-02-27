@@ -6,7 +6,7 @@
 An npm module for working with the Instagram API.
 
 ## Overview
-TBD
+Prior to testing, set the node env variable NODE_IG_TOKEN to the value of your Instagram oAuth token.
 
 ## Installation
 
