@@ -11,13 +11,20 @@ module.exports.searchByHashtag = function(token, hashtag) {
     rejectUnauthorized: config.rejectUnauthorized
   };
   return rp(options).then(function(res) {
-    let matchedMedia = [];
-    const resJSON = JSON.parse(res);
-    _.forEach(resJSON.data, function(d) {
-      if (d.tags.indexOf(hashtag) > -1) {
-         matchedMedia.push(d);
-      }
-    });
-    return { data: matchedMedia };
+    const matchedMedia = [];
+    try {
+      const resJSON = JSON.parse(res);
+      _.forEach(resJSON.data, function (d) {
+        if (d.tags.indexOf(hashtag) > -1)
+          matchedMedia.push(d);
+
+      });
+      return {data: matchedMedia};
+    }
+    catch (err) {
+      console.log(res);
+      console.log(err);
+      return {error: err};
+    }
   });
 };
